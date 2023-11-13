@@ -14,3 +14,14 @@ type Story = StoryObj<typeof meta>;
 export const MyComponentBasic: Story = {
   args: {},
 };
+
+export const MyComponentNew: Story = {
+  render() {
+    return (
+      <div>
+        <h1>Testing</h1>
+        <MyComponent />
+      </div>
+    );
+  },
+};

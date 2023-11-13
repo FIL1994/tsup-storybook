@@ -15,8 +15,8 @@
     "strict": true,
     // Error when a value import is only used as a type.
     "verbatimModuleSyntax": true,
-    "jsx": "react",
-    // "jsxImportSource": "react",
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
     "lib": ["dom", "dom.iterable", "esnext"],
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
