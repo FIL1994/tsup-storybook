@@ -2,12 +2,17 @@
   "name": "tsup-storybook",
   "version": "0.0.1",
   "description": "tsup storybook example",
-  "main": "index.js",
+  "main": "src/index.ts",
+  "type": "module",
   "scripts": {
-    "build": "tsup src/index.ts"
+    "build": "tsup src/index.ts",
+    "format": "prettier --cache -w ."
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "react",
+    "tsup"
+  ],
+  "author": "Philip Van Raalte",
   "license": "ISC",
   "exports": {
     ".": {
@@ -16,6 +21,10 @@
     }
   },
   "treeshake": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FIL1994/tsup-storybook.git"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
