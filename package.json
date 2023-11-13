@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
-    "build": "tsup src/index.ts",
+    "build": "tsup --config tsup.config.ts",
     "format": "prettier --cache -w ."
   },
   "keywords": [
@@ -16,7 +16,7 @@
   "license": "ISC",
   "exports": {
     ".": {
-      "require": "./dist/index.js",
+      "require": "./dist/index.cjs",
       "import": "./dist/index.js"
     }
   },
@@ -30,9 +30,10 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
     "prettier": "^3.1.0",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2"
-  },
-  "peerDependencies": {}
+  }
 }
